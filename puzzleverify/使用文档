@@ -1,0 +1,14 @@
+SlidingBlocSeekBar:
+1.更新属性之后要调用 notityView（）才能生效，该方法在最后调用
+示例：
+ slidingBlocSeekBar!!.setThumbBitmap(R.drawable.sliding_bloc_right).
+            setBgColorActive("#D2F4EF").
+            setBorderColorActive("#92E0D4").notifyView()
+
+2.  isUseDefaultStyle  该属性说明:
+  /**
+        * 是否使用默认的样式
+        * 注:如果不使用,必须设置为 false
+             默认为true
+        */
+  var isUseDefaultStyle : Boolean = true
